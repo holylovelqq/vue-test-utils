@@ -177,7 +177,7 @@ describe('键盘事件测试', () => {
   it('魔术字符 "a" 键将数量设置为 13', () => {
     const wrapper = mount(QuantityComponent)
     wrapper.trigger('keydown', {
-      which: 65
+      keyCode: 65
     })
     expect(wrapper.vm.quantity).toBe(13)
   })
